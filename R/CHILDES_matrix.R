@@ -33,19 +33,7 @@ CHILDES_matrix <- function(k, x, transcript_id = NULL, utterance_id = NULL, toke
 
 
 
-CHILDES_matrix_test <- function() {
-  xstring <- "the ball is on the dog why is the ball on the dog"
-  x <- strsplit(xstring, split = ' ')[[1]]
-  n <- length(x)
-  tid <- rep(1, 6)
-  uid <- rep(1, 6)
-  tok <- 1:6
-  k <- 3
-  tmp <- CHILDES_matrix(k = 3, x, transcript_id = tid, utterance_id = uid, token_order = tok)
-  y <- c("the", "ball", "is", "on", "dog")
-  return(tmp[y, y])
-}
-CHILDES_matrix_test()
+
 
 
 
